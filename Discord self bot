@@ -1,0 +1,12 @@
+import discord
+import os
+from discord.ext import commands 
+
+me = commands.Bot(command_prefix="<>", case_sensitive=True, activity=discord.Streaming(name="twin", url="https://twitch.tv/Murder%22))
+
+@me.event
+async def on_ready():
+
+    print('ready')
+
+me.run("NjE4OTQ4NjYxMzQ2MzA0MDQw.G47fox.D2EoIV9GKRgK9VWjEbv83RDz2No1nQ9nStycsY", bot=False)
